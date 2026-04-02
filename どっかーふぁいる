@@ -1,0 +1,5 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY . .
+RUN pip install discord.py python-dotenv aiohttp bcsfe useragent-changer
+CMD ["python", "main.py"]
